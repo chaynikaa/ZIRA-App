@@ -1,0 +1,136 @@
+body{
+    margin:0;
+}
+*{
+    box-sizing: border-box;
+}
+.navbar{
+    height: 12vh;
+    background-color: #333;
+    display: flex;
+}
+.ticket-container{
+    min-height: 88vh;
+    background-color: white;
+    padding: 2rem;
+    position: relative;
+}
+.filter-container, .add-delete-container{
+    background-color:#444;
+    margin-top: 2vh ;
+    margin-left: 8vh;
+    height: 8vh;
+    width: 30px;
+
+}
+.filter-container{
+    width: 60vw;
+    display: flex;
+}
+.add-delete-container{
+    width: 17vw;
+    display: flex;
+
+    
+}
+.filter, .add, .delete{
+    height: 100%;
+}
+.add, .delete{
+    width: 50%;
+    height: 100%;
+}
+ .filter{
+     width: 25%;
+     display: flex;
+     height: 100%;
+ }
+ .pink-color-btn,
+ .blue-color-btn,
+ .yellow-color-btn,
+ .green-color-btn{
+     margin-left: 33%;
+     display: block;
+     width: 34%;
+     height: 50%;
+     border-radius: 10px;
+     margin-top: 7%;
+  
+ }
+ .pink-color-btn, .pink-modal-filter{
+     background-color: pink;
+ }
+ .yellow-color-btn, .yellow-modal-filter{
+    background-color:rgb(194, 194, 26);
+}
+.green-color-btn, .green-modal-filter{
+    background-color:green;
+}
+.blue-color-btn, .blue-modal-filter{
+    background-color: rgb(43, 153, 226);
+}
+.action-btn{
+    width: 100%;
+    height: 100%;
+    text-align : center;
+    color: #ffffff;
+    padding-top: 0.7rem;
+    font-size: 2rem;
+    border-radius: 50px;
+
+}
+.action-btn:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+.filter:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+.modal{
+    height: 18rem;
+    width: 35rem;
+    background-color:rgb(231, 224, 224);
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 0 50px 10px;
+    position: absolute;
+    top: calc((88vh - 18rem)/2);
+    left: calc((100vw - 35rem)/2) ;
+
+}
+.task-to-be-added{
+    height: 100%;
+    width: 70%;
+    border-radius: 10px;
+    padding: 3rem;
+    outline: none;
+}
+.placeholder{
+    color: rgb(94, 91, 91);
+}
+
+.priority-list{
+    height: 100%;
+    width: 30%;
+    background-color:gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+    border-radius: 10px;
+
+}
+.modal-filter{
+    width: 100%;
+    height: 20%;
+    border-radius: 10px;
+}
+.modal-filter:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.modal-filter.active{
+    border: 3px solid;
+}
+     
