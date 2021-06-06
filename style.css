@@ -54,12 +54,18 @@ body{
  .blue-color-btn,
  .yellow-color-btn,
  .green-color-btn{
-     margin-left: 33%;
+     margin-left: 20%;
      display: block;
-     width: 34%;
-     height: 50%;
+     justify-content: center;
+     width: 70%;
+     height: 70%;
      border-radius: 10px;
-     margin-top: 7%;
+     margin-top: 8px;
+     text-align: center;
+     padding: 7px;
+     font-weight: 600;
+     font-size: 20px;
+     text-shadow: 1px 1px 4px rgb(36, 35, 35);
   
  }
  .pink-color-btn, .pink-modal-filter{
@@ -142,13 +148,18 @@ body{
 .modal-filter.active{
     border: 3px solid;
 }
+
+
 .ticket{
     height: 9rem;
     width: 16rem;
-    background-color: rgba(240, 244, 248, 0.918);
+    background-color: rgba(223, 234, 245, 0.918);
     border-radius: 10px;
-    
-
+    box-shadow: 0 0 50px 10px;
+    transition: transform .2s;
+}
+.ticket:hover{
+    transform: scale(1.3);
 }
 .ticket-color{
  height: 10%;
@@ -161,12 +172,13 @@ body{
      width: 100%;
      height: 15%;
      padding: 3%;
+     font-weight: 1000;
 }
 .task{
     width: 100%;
     height: 75%;
     padding: 3%;
-
+    font-weight: bold;
 }
 .ticket-color-yellow{
     background-color: yellow;
@@ -182,4 +194,9 @@ body{
 }
 .ticket.active{
     box-shadow: 1px 1px 5px 3px;
+}
+@media screen and (max-width :768px){
+    .task-list, .task-input{
+        width: 70%;
+    }
 }

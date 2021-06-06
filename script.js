@@ -24,7 +24,7 @@ if(allTaskData != null){
         ticket.classList.add("ticket");
          ticket.innerHTML = `<div class="ticket-color ticket-color-${data[i].selectedPriority}"></div>
         <div class="ticket-id">${data[i].taskId}</div>
-        <div class="task">
+        <div class="task">TASK-
         ${data[i].task}
         
         </div>`;
