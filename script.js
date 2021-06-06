@@ -23,7 +23,8 @@ if(allTaskData != null){
         let ticket = document.createElement("div");
         ticket.classList.add("ticket");
          ticket.innerHTML = `<div class="ticket-color ticket-color-${data[i].selectedPriority}"></div>
-        <div class="ticket-id">${data[i].taskId}</div>
+        <span class="TID">Task Id: </span>
+         <span class="ticket-id">${data[i].taskId}</span>
         <div class="task">TASK-
         ${data[i].task}
         
